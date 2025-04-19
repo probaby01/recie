@@ -1,0 +1,138 @@
+*{
+   /* reset and general styling*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+]
+body{
+    font-family: 'Arial', sans-serif;
+    background-color:#f5e9e2;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+/* Container for the recipe card */
+.container{
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Image section */
+.recipe-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Content section */
+.content{
+    padding: 30px;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #180a02;
+}
+.description{
+    font-size: 1em;
+    color: #52412e;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* preparation time section */
+.prep-time{
+    background-color: #b79dd8;/*changed to purple*/
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.prep-time h3{
+    font-size: 0.5em;
+    margin-bottom: 15px;
+    color: #aa0ba0;/*changed to a darker purple*/
+}
+
+.prep-time ul{
+    list-style: none;
+    padding-left: 20px;
+}
+.prep-time li{
+    font-size: 0.95em;
+    color: #52412e;
+    margin-bottom: 10px;
+    background-color: #b79dd8;
+}
+.prep-time li::before {
+    content: "✔️";
+    color: #;800020
+    position: absolute;
+    font-size: 1.2em;
+    margin-bottom :15px;
+    background-color:#b79dd8;
+}
+  /* Ingredients and Instructions Sections */
+  h2 {
+    font-size: 1.5em;
+    color: #893F45;
+    margin-bottom: 15px
+}
+
+    ul, ol {
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    ul li, ol li {
+        font-size: 0.95em;
+        color: #52412e;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    ul li::before, {
+        content: "✔️";
+        color: #800020;
+        position: absolute;
+        left: -20px;
+        font-size: 1.2em;
+    }
+    ol li{
+        padding-left:10px;;
+    }
+    ol li::marker{
+        color: #893F45;
+        font-weight: bold;
+    }
+   
+    /*Nutrition Section*/
+    .nutrition P{
+        font-size: 0.95em;
+        color: #794444db;
+        margin-bottom: 15px;
+    }
+
+    table{
+        width :100%;
+        border-collapse: collapse;
+    }
+
+    tr{
+        border-bottom: 1px solid #eee;
+    }
+
+    td{
+        padding: 10px 0;
+        font-size: 0.95em;
+    }
+
+td:last-child{
+    font-weight: bold;
+    color:#893F45;
+}
